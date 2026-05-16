@@ -1,0 +1,38 @@
+import heroImg from "../assets/DIG.jpeg";
+import resume from "../assets/Digvijay_Tripathy_Resume.pdf";
+import "./Test.css"
+
+function Test() {
+  return (
+    <section className="hero-section" id="home">
+      <div className="hero-content">
+        {/* Profile Image */}
+        <div className="hero-image">
+          <img src={heroImg} alt="Digvijay Tripathy" />
+        </div>
+
+        {/* Text */}
+        <h1>Hi, I'm Digvijay Tripathy</h1>
+        <p className="hero-title">Frontend Developer</p>
+        <p className="hero-description">
+          I build modern, responsive interfaces and seamless user experiences.
+        </p>
+
+        <div className="hero-buttons">
+          <a href="#projects" className="btn primary-btn">
+            View Projects
+          </a>
+          <a
+            href={resume}
+            className="btn outline-btn"
+            download="./Digvijay_Tripathy_Resume.pdf"
+          >
+            Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Test;
